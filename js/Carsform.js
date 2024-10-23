@@ -23,10 +23,10 @@ document.getElementById("myForm").addEventListener("submit", function (e) {
     Email.send({
         Host: "smtp.elasticemail.com",
         Port: 2525,
-        Username: "komalsingh552718@gmail.com", // Replace with your Elastic Email username
-        Password: "E1A0EA6134F4FBAA3A2D1B351ABD97EA6B8A", // Replace with your Elastic Email SMTP password
-        To: 'komalsingh552718@gmail.com', // Replace with the recipient's email
-        From: "komalsingh552718@gmail.com", // Replace with your verified sender email
+        Username: "booking@carcoachrentalsindia.com", // Replace with your Elastic Email username
+        Password: "A9DB6CC51DBD00D90DA6AE071BD408233444", // Replace with your Elastic Email SMTP password
+        To: 'booking@carcoachrentalsindia.com', // Replace with the recipient's email
+        From: "booking@carcoachrentalsindia.com", // Replace with your verified sender email
         Subject: `Booking Details for ${formData.name}`,
         Body: `
             <b>Name:</b> ${formData.name}<br/>
@@ -40,7 +40,8 @@ document.getElementById("myForm").addEventListener("submit", function (e) {
         `
     }).then(
         message => {
-            alert("Email sent successfully!");
+             alert(message);
+        window.location.href = "thankyou.html"; // Replace with your Thank You page URL
             // Reset the form fields after successful submission
             document.getElementById("myForm").reset();
         }
