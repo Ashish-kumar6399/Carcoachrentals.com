@@ -29,6 +29,43 @@
     <link href="css/style.css" rel="stylesheet">
 </head>
 
+<!-- about section -->
+<style>
+    @media screen and (max-width: 500px) {}
+
+
+
+    .about-section {
+        padding: 10px 14px;
+    }
+
+    .about-text {
+        text-align: left;
+    }
+
+    .about-text h2 {
+        font-weight: bold;
+    }
+
+    .about-text p {
+        font-size: 16px;
+        color: #333;
+    }
+
+    .about-text a {
+        font-weight: bold;
+        font-size: 18px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .about-image img {
+        width: 100%;
+        border-radius: 10px;
+    }
+</style>
+
+
 <body>
     <!-- Topbar Start -->
     <div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
@@ -175,18 +212,49 @@
     <!-- Carousel End -->
 
 
+
+
+
+
+
+    <div class="container about-section">
+        <div class="row align-items-center  flex-column-reverse flex-md-row">
+            <div class="col-md-7 about-text">
+                <h2 class="my-4 text-center text-lg-left text-decoration-underline" style="text-decoration: underline;">About Us</h2>
+                <p class="text-justify">
+                    Car Coach Rental India offers reliable, comfortable, and affordable travel solutions across India.
+                    With a diverse fleet of well-maintained vehicles, from sedans to buses, we ensure a seamless journey
+                    for solo travelers and groups alike. Our personalized tour packages cover iconic destinations like
+                    the Taj Mahal, Varanasi, and the Himalayas, creating unforgettable travel experiences.
+                </p>
+                <p class="text-justify">
+                    Beyond rentals, we provide 24/7 customer support and experienced drivers who double as guides,
+                    enhancing your journey with local insights. Committed to sustainability, we promote eco-friendly
+                    practices while ensuring transparent pricing and hassle-free bookings. Choose us as your trusted
+                    travel partner and embark on a journey filled with memories, adventure, and discovery.
+                </p>
+                <a href="About.html">Read more...</a>
+            </div>
+            <div class="col-md-5 about-image">
+                <img src="IMG/Cards/3.png"
+                    alt="Car Image">
+            </div>
+        </div>
+    </div>
+
+
     <!-- About Start -->
     <div class="container-fluid py-5">
         <div class="container pt-5 pb-3">
             <h1 class="display-1 text-primary text-center">01</h1>
-            <h1 class="display-4 text-uppercase text-center mb-5">Welcome To <span
+            <h1 class="display-5 text-uppercase text-center mb-5">Welcome To <span
                     class="text-primary">CarCoachRentalsIndia</span></h1>
             <div class="row justify-content-center">
                 <div class="col-lg-10 text-center">
                     <img class="w-75 mb-4" src="" alt="">
-                    <p>Welcome to Car Coach Rental India, your trusted partner for comfortable, reliable, and affordable
+                    <!-- <p>Welcome to Car Coach Rental India, your trusted partner for comfortable, reliable, and affordable
                         journeys. Discover the joy of travel with our premium rental services across India.<a
-                            href="About.html">....Readmore</a></p>
+                            href="About.html">....Readmore</a></p> -->
                 </div>
             </div>
             <div class="row mt-3">
@@ -253,25 +321,27 @@
                             <h1 class="display-2 text-white mt-n2 m-0">02</h1>
                         </div>
                         <h4 class="text-uppercase mb-3">Van</h4>
-                        <p class="m-0">"Journey together with ease—our vans offer spacious, safe, and stylish group travel experiences." 🚌💼</p>
+                        <p class="m-0">"Journey together with ease—our vans offer spacious, safe, and stylish group
+                            travel experiences." 🚌💼</p>
                     </div>
                 </div>
-                
+
                 <div class="col-lg-4 col-md-6 mb-2">
                     <a href="Tour-Packages.html" style="text-decoration: none;">
-                    <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
-                        <div class="d-flex align-items-center justify-content-between mb-3">
-                            <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
-                                style="width: 80px; height: 80px;">
-                                <i class="fa fa-2x fas fa-globe-asia text-secondary"></i>
+                        <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
+                            <div class="d-flex align-items-center justify-content-between mb-3">
+                                <div class="d-flex align-items-center justify-content-center bg-primary ml-n4"
+                                    style="width: 80px; height: 80px;">
+                                    <i class="fa fa-2x fas fa-globe-asia text-secondary"></i>
+                                </div>
+                                <h1 class="display-2 text-white mt-n2 m-0">03</h1>
                             </div>
-                            <h1 class="display-2 text-white mt-n2 m-0">03</h1>
+                            <h4 class="text-uppercase mb-3">Tour Packages</h4>
+                            <p class="m-0">"Unveil the world's wonders with our curated tour packages—adventure,
+                                relaxation,
+                                and memories await." 🌍✨</p>
                         </div>
-                        <h4 class="text-uppercase mb-3">Tour Packages</h4>
-                        <p class="m-0">"Unveil the world's wonders with our curated tour packages—adventure, relaxation,
-                            and memories await." 🌍✨</p>
-                    </div>
-                </a>
+                    </a>
                 </div>
                 <!-- <div class="col-lg-4 col-md-6 mb-2">
                     <div class="service-item d-flex flex-column justify-content-center px-4 mb-4">
@@ -425,7 +495,7 @@
 
 
     <!-- Team Start -->
-        <!-- <div class="container-fluid py-5">
+    <!-- <div class="container-fluid py-5">
             <div class="container py-5">
                 <h1 class="display-1 text-primary text-center">03</h1>
                 <h1 class="display-4 text-uppercase text-center mb-5">Online Car Coach Booking</h1>
@@ -453,14 +523,14 @@
                             <p class="m-0">Details</p>
                         </div>
                     </div> -->
-                <!-- <div class="team-item">
+    <!-- <div class="team-item">
                     <img class="img-fluid w-100" src="img/bus.jpg" alt="">
                     <div class="position-relative py-4">
                         <h4 class="text-uppercase">Volvo Bus</h4>
                         <p class="m-0">Details</p>
                     </div>
                 </div> -->
-            <!-- </div>
+    <!-- </div>
         </div>
     </div> -->
     <!-- Team End -->
@@ -560,39 +630,43 @@
                         <form id="myForm">
                             <div class="row">
                                 <div class="col-6 form-group">
-                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name" required>
+                                    <input type="text" class="form-control p-4" id="name" placeholder="Your Name"
+                                        required>
                                 </div>
                                 <div class="col-6 form-group">
-                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email" required>
+                                    <input type="email" class="form-control p-4" id="email" placeholder="Your Email"
+                                        required>
                                 </div>
                             </div>
                             <div class="form-group">
-                                <input type="text" class="form-control p-4" id="mobile" placeholder="Your Mobile Number" required>
+                                <input type="text" class="form-control p-4" id="mobile" placeholder="Your Mobile Number"
+                                    required>
                             </div>
                             <div class="form-group">
                                 <input type="text" class="form-control p-4" id="subject" placeholder="Subject" required>
                             </div>
                             <div class="form-group">
-                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message" required></textarea>
+                                <textarea class="form-control py-3 px-4" rows="5" id="message" placeholder="Message"
+                                    required></textarea>
                             </div>
                             <div class="form-group mb-3">
                                 <label for="services">Services</label>
-                                 <select class="form-control" id="services">
-                                        <option>Select </option>
-                                        <option class="text-uppercase"  value=" cars"> Cars</option>
-                                        <option class="text-uppercase"  value="packages">Package</option>                                                     
-                                        <option class="text-uppercase"  value="Others ">Others </option>
-                                    </select>
-                              </div>
+                                <select class="form-control" id="services">
+                                    <option>Select </option>
+                                    <option class="text-uppercase" value=" cars"> Cars</option>
+                                    <option class="text-uppercase" value="packages">Package</option>
+                                    <option class="text-uppercase" value="Others ">Others </option>
+                                </select>
+                            </div>
                             <div>
                                 <button type="submit" class="btn btn-primary" id="submit">Submit</button>
                             </div>
                         </form>
-                        
+
                     </div>
                 </div>
                 <div class="col-lg-5 mb-2">
-                    <div class="bg-secondary d-flex flex-column justify-content-center px-5 mb-4"
+                    <div class="bg-secondary d-flex flex-column justify-content-center px-0 px-lg-5   mb-4"
                         style="height: 435px;">
                         <div class="d-flex mb-3">
                             <i class="fa fa-2x fa-map-marker-alt text-primary flex-shrink-0 mr-3"></i>
@@ -613,7 +687,8 @@
                             <i class="fa fa-2x fa-envelope-open text-primary flex-shrink-0 mr-3"></i>
                             <div class="mt-n1">
                                 <h5 class="text-dark">E-mail ID</h5>
-                                <a href="mailto:booking@carcoachrentalsindia.com">booking@carcoachrentalsindia.com</a>
+                                <a class="mail_address"
+                                    href="mailto:booking@carcoachrentalsindia.com">booking@carcoachrentalsindia.com</a>
                             </div>
                         </div>
                         <div class="d-flex">
@@ -655,7 +730,8 @@
             <div class="col-lg-2 col-md-6 mb-5">
                 <h4 class="text-uppercase text-light mb-4">Usefull Links</h4>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-body mb-2" href="About.html"><i class="fa fa-angle-right text-white mr-2"></i>About Us</a>
+                    <a class="text-body mb-2" href="About.html"><i class="fa fa-angle-right text-white mr-2"></i>About
+                        Us</a>
                     <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Privacy
                         Policy</a>
                     <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Term &
@@ -736,9 +812,9 @@
     <!-- Template Javascript -->
     <script src="/js/main.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-   <script src="/js/Form.js"></script>
+    <script src="/js/Form.js"></script>
 
-    
+
 
 </body>
 
