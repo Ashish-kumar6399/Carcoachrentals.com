@@ -77,9 +77,10 @@
         autoplay: true,
         smartSpeed: 1500,
         margin: 30,
-        dots: true,
+        dots: false,
         loop: true,
         center: true,
+        nav : false,
         responsive: {
             0:{
                 items:1

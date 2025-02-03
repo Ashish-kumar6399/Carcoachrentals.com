@@ -27,11 +27,22 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+
+   
 </head>
+<style>
+    
+    @media (max-width: 576px) {
+   iframe{
+    display: none;
+  }
+}
+   
+</style>
 
 <body>
-    <!-- Topbar Start -->
-    <div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
+      <!-- Topbar Start -->
+      <div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
         <div class="row">
             <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
                 <div class="d-inline-flex align-items-center">
@@ -72,11 +83,11 @@
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid position-relative nav-bar p-0">
+    <div class="container-fluid position-relative nav-bar p-0 ">
         <div class="position-relative px-lg-5" style="z-index: 9;">
-            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
-                <a href="index.html" class="navbar-brand">
-                    <h1 class="text-uppercase text-primary mb-1">CarCoachRentalsIndia</h1>
+            <nav class="navbar navbar-expand-lg  navbar-dark py-3 py-lg-0 pl-3 pl-lg-5 navbar_inner">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-uppercase  mb-1">CarCoachRentalsIndia</h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -84,15 +95,15 @@
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
                         <div class="nav-item dropdown">
-                            <a href="" class="nav-link active dropdown-toggle" data-toggle="dropdown">Car</a>
+                            <a href="" class="nav-link active dropdown-toggle text-md-white text-sm-white" data-toggle="dropdown">Car</a>
                             <div class="dropdown-menu rounded-0 m-0">
-                                <!-- <a href="" class="dropdown-item">Luxury Cars Fleet</a> -->
+                                <!-- <a href="#" class="dropdown-item">Luxury Cars Fleet</a> -->
                                 <a href="BudgetCarsFleet.html" class="dropdown-item">Budget Cars Fleet</a>
                                 <a href="SuvCarsFleet.html" class="dropdown-item">SUV Vehicle Fleet</a>
                             </div>
                         </div>
                         <div class="nav-item dropdown">
-                            <a href="" class="nav-link active dropdown-toggle" data-toggle="dropdown">Minivan</a>
+                            <a href="" class="nav-link active dropdown-toggle text-md-white text-sm-white" data-toggle="dropdown">Minivan</a>
                             <div class="dropdown-menu rounded-0 m-0">
                                 <a href="" class="dropdown-item">Minivan</a>
                             </div>
@@ -101,8 +112,8 @@
                     <div class="nav-item dropdown">
                         <a href="" class="nav-link active dropdown-toggle" data-toggle="dropdown">Tour Packages</a>
                         <div class="dropdown-menu rounded-0 m-0">
-                            <a href="" class="dropdown-item">Hill Station</a>
-                            <a href="" class="dropdown-item">Weekend Tours</a>
+                            <a href="Tour-Packages.html" class="dropdown-item">Packages</a>
+                            <!-- <a href="" class="dropdown-item">Weekend Tours</a> -->
                         </div>
                     </div>
                     <a href="ContactUs.html" class="nav-item nav-link active">Contact Us</a>
@@ -111,7 +122,7 @@
         </nav>
     </div>
     </div>
-    <!-- Navbar End -->
+    <!-- Navbar End --
 
 
 
@@ -175,13 +186,13 @@
 <!-- Carousel End -->
 
     <!-- About Start -->
-    <div class="container-fluid py-5">
+    <div class="container py-5">
         <!-- <div class="container pt-5 pb-3"> -->
             <h1 class="display-4 text-uppercase text-center mb-5">About <span class="text-primary">US</span></h1>
             <div class="row justify-content-center">
-                <div class="col-8 text-center">
+                <div class=" col-12 col-lg-8 c text-center">
                     <!-- <img class="w-75 mb-4" src="" alt=""> -->
-                    <p>Welcome to Car Coach Rental India, your trusted partner for comfortable, reliable, and affordable
+                    <p class="text-justify">Welcome to Car Coach Rental India, your trusted partner for comfortable, reliable, and affordable
                         journeys. Discover the joy of travel with our premium rental services across India.every journey
                         is a promise of memories that last a lifetime. As your premier travel companion, we are
                         dedicated to providing you with comfortable, reliable, and affordable travel solutions. Our
@@ -229,7 +240,7 @@
                         So, pack your bags, set your sights on the horizon, and let's hit the road together. Welcome
                         aboard, where your comfort is our command, and the wonders of India await. 🚗🇮🇳✨</p>
                 </div>
-                <div class="col-4 bg-light">
+                <div class=" col-sm-12 col-lg-4  bg-light">
                     <form class="pb-4">
                         <div class="form-group pt-3">
                             <label for="name">Name*</label>

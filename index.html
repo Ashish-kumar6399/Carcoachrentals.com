@@ -27,6 +27,8 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
 </head>
 
 <!-- about section -->
@@ -64,6 +66,54 @@
         border-radius: 10px;
     }
 </style>
+<!-- car collection and owl carousel styling -->
+
+<style>
+    .car-section {
+      text-align: center;
+      padding: 50px 0;
+      background-color: #f8f8f8;
+    }
+  
+    .car-section h2 {
+      font-size: 2em;
+      margin-bottom: 30px;
+    }
+  
+    .owl-carousel .item {
+      background: #fff;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+  
+    .owl-carousel .item img {
+      max-width: 100%;
+      border-radius: 10px;
+    }
+  
+    .owl-carousel .item h3 {
+      margin-top: 15px;
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+  
+    .owl-carousel .item p {
+      font-size: 1em;
+      color: #555;
+    }
+
+
+    .testimonial-carousel .owl-item img {
+    width: 100%;
+    height: 100%;
+}
+  </style>
+  
+  
+  
+  
 
 
 <body>
@@ -109,11 +159,11 @@
 
 
     <!-- Navbar Start -->
-    <div class="container-fluid position-relative nav-bar p-0">
+    <div class="container-fluid position-relative nav-bar p-0 ">
         <div class="position-relative px-lg-5" style="z-index: 9;">
-            <nav class="navbar navbar-expand-lg bg-secondary navbar-dark py-3 py-lg-0 pl-3 pl-lg-5">
+            <nav class="navbar navbar-expand-lg  navbar-dark py-3 py-lg-0 pl-3 pl-lg-5 navbar_inner">
                 <a href="" class="navbar-brand">
-                    <h1 class="text-uppercase text-primary mb-1">CarCoachRentalsIndia</h1>
+                    <h1 class="text-uppercase  mb-1">CarCoachRentalsIndia</h1>
                 </a>
                 <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                     <span class="navbar-toggler-icon"></span>
@@ -121,7 +171,7 @@
                 <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
                     <div class="navbar-nav ml-auto py-0">
                         <div class="nav-item dropdown">
-                            <a href="" class="nav-link active dropdown-toggle" data-toggle="dropdown">Car</a>
+                            <a href="" class="nav-link active dropdown-toggle text-md-white text-sm-white" data-toggle="dropdown">Car</a>
                             <div class="dropdown-menu rounded-0 m-0">
                                 <!-- <a href="#" class="dropdown-item">Luxury Cars Fleet</a> -->
                                 <a href="BudgetCarsFleet.html" class="dropdown-item">Budget Cars Fleet</a>
@@ -129,7 +179,7 @@
                             </div>
                         </div>
                         <div class="nav-item dropdown">
-                            <a href="" class="nav-link active dropdown-toggle" data-toggle="dropdown">Minivan</a>
+                            <a href="" class="nav-link active dropdown-toggle text-md-white text-sm-white" data-toggle="dropdown">Minivan</a>
                             <div class="dropdown-menu rounded-0 m-0">
                                 <a href="" class="dropdown-item">Minivan</a>
                             </div>
@@ -242,6 +292,163 @@
         </div>
     </div>
 
+    <section class="car-section ">
+        <h2>Our Car Collection</h2>
+        <div class="container">
+        <div class="owl-carousel testimonial-carousel">
+          <div class="item">
+            <div class="car-card">
+              <img src="https://www.minivanhiredelhi.com/uploads/56058_Kia%20Carniva%20Car.jpeg" alt="Red Car">
+              <div class="car-info">
+                <h3>Red Car</h3>
+                <p>This red car is built for speed and style.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="car-card">
+              <img src="https://www.minivanhiredelhi.com/uploads/56058_Kia%20Carniva%20Car.jpeg" alt="Blue Car">
+              <div class="car-info">
+                <h3>Blue Car</h3>
+                <p>Power and elegance wrapped in a blue exterior.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="car-card">
+              <img src="https://www.minivanhiredelhi.com/uploads/56058_Kia%20Carniva%20Car.jpeg" alt="Black Car">
+              <div class="car-info">
+                <h3>Black Car</h3>
+                <p>Modern luxury combined with sleek black design.</p>
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="car-card">
+              <img src="https://www.minivanhiredelhi.com/uploads/56058_Kia%20Carniva%20Car.jpeg" alt="Sports Car">
+              <div class="car-info">
+                <h3>Sports Car</h3>
+                <p>Experience high-performance driving with our sports car.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+   <a href="cars.html"><button class="text-center view_all_btn">View All...</button>
+   </a> 
+      </section>
+
+
+
+
+
+      <section class="car-section">
+        <h2>Our vans Collection</h2>
+        <div class="container">
+            <div class="owl-carousel testimonial-carousel">
+                <div class="item">
+                  <div class="car-card">
+                    <img src="https://www.minivanhiredelhi.com/uploads/93346_1Tempo%20Traveler%20Van.jpg" alt="Red Car">
+                    <div class="car-info">
+                      <h3>Red Car</h3>
+                      <p>This red car is built for speed and style.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="car-card">
+                    <img src="https://www.minivanhiredelhi.com/uploads/93346_1Tempo%20Traveler%20Van.jpg" alt="Blue Car">
+                    <div class="car-info">
+                      <h3>Blue Car</h3>
+                      <p>Power and elegance wrapped in a blue exterior.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="car-card">
+                    <img src="https://www.minivanhiredelhi.com/uploads/93346_1Tempo%20Traveler%20Van.jpg" alt="Black Car">
+                    <div class="car-info">
+                      <h3>Black Car</h3>
+                      <p>Modern luxury combined with sleek black design.</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="car-card">
+                    <img src="https://www.minivanhiredelhi.com/uploads/93346_1Tempo%20Traveler%20Van.jpg" alt="Sports Car">
+                    <div class="car-info">
+                      <h3>Sports Car</h3>
+                      <p>Experience high-performance driving with our sports car.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+        
+       
+      </section>
+
+
+
+
+      <section class="car-section">
+        <h2>Our Tour Packages </h2>
+        <div class="container">
+            <div class="owl-carousel testimonial-carousel">
+                <a href="Packages/Golden-Triangle-Tour.html"><div class="item">
+                    <div class="car-card">
+                      <img src="/IMG/Cards/delhi jaipur agra.webp" style="height: 17rem;" alt="Red Car">
+                      <div class="car-info">
+                        <h3> Golden Triangle Tour</h3>
+                        <!-- <p>This red car is built for speed and style.</p> -->
+                      </div>
+                    </div>
+                  </div></a>
+                <a href="Packages/Delhi-Agra-Delhi-Tour.html"><div class="item">
+                    <div class="car-card">
+                      <img src="/IMG/Cards/2-days-delhi-agra-tour-package.webp" style="height: 17rem;" alt="Blue Car">
+                      <div class="car-info">
+                        <h3>Delhi Agra Tour</h3>
+                        <!-- <p>Power and elegance wrapped in a blue exterior.</p> -->
+                      </div>
+                    </div>
+                  </div></a>
+                <a href="Packages/Rajasthan-Tour.html">
+                <div class="item">
+                  <div class="car-card">
+                    <img src="/IMG/Cards/Rajasthan-11.webp"  style="height: 17rem;"alt="Black Car">
+                    <div class="car-info">
+                      <h3>Rajasthan Tour</h3>
+                      <!-- <div class="d-flex " style="justify-content: space-evenly;">
+                          <h6> <i class="bi bi-geo-alt"></i>Delhi–Agra–Jaipur– Pushkar–Udaipur –Jodhpur via Ranakpur – Jaisalmer – Bikaner – Mandawa – Delhi</h6>
+                        <h6 class="text-dark "> <strong><i class="bi bi-clock"></i>  13D/2D
+                        </strong></h6>
+                      </div> -->
+                    </div>
+                  </div>
+                </div>
+            </a>
+                <!-- <div class="item">
+                  <div class="car-card">
+                    <img src="https://www.minivanhiredelhi.com/uploads/93346_1Tempo%20Traveler%20Van.jpg" alt="Sports Car">
+                    <div class="car-info">
+                      <h3>Sports Car</h3>
+                      <p>Experience high-performance driving with our sports car.</p>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+        </div>
+        <a href="Tour-Packages.html"><button class="text-center view_all_btn">View All...</button>
+        </a> 
+       
+      </section>
+
+
+
+      
+      
 
     <!-- About Start -->
     <div class="container-fluid py-5">
@@ -290,6 +497,8 @@
     </div>
     <!-- About End -->
 
+  
+      
 
     <!-- Services Start -->
     <div class="container-fluid py-5">
@@ -813,6 +1022,9 @@
     <script src="/js/main.js"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="/js/Form.js"></script>
+
+
+    
 
 
 

@@ -411,3 +411,55 @@ body{
 
     }
 }
+
+
+.view_all_btn{
+    padding: 20px 30px;
+    border-radius: 7%;
+    color: white;
+    background-color: #1c1e32;
+    margin: 20px;
+    /* font-size: 20px; */
+}
+
+
+
+
+
+
+
+@media (min-width: 576px) {
+    .navbar-expand-lg{
+        background-color: white;
+        color: black;
+    }
+}
+@media (min-width: 1000px) {
+ 
+    
+}
+
+@media (max-width: 1000px) {
+    .navbar_inner{
+        background-color: #1c1e32    ;
+    }
+    .navbar_inner h1{
+        color: white;
+        font-size: 1.5rem;
+    }
+    .nav-link{
+        color: white;
+    }
+}
+
+@media (max-width: 500px) {
+    .navbar_inner h1{
+        font-size: 1.2rem;
+    }
+    .nav-link{
+        color: white;
+    }
+    
+}
+
+
