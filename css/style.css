@@ -463,3 +463,9 @@ body{
 }
 
 
+ /* navbarr color */
+@media (max-width: 1000px) {
+    .nav-link.car-link {
+        color: white !important;
+    }
+}
