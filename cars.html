@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,28 +11,30 @@
     <!-- Favicon -->
     <link href="Favicon/favicon.ico" rel="icon">
 
-     <!-- Google Web Fonts -->
-     <link rel="preconnect" href="https://fonts.gstatic.com">
-     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap"
-         rel="stylesheet">
- 
-     <!-- Font Awesome -->
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
- 
-     <!-- Libraries Stylesheet -->
-     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
- 
-     <!-- Customized Bootstrap Stylesheet -->
-     <link href="css/bootstrap.min.css" rel="stylesheet">
- 
-     <!-- Template Stylesheet -->
-     <link href="/css/style.css" rel="stylesheet">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Rubik&display=swap"
+        rel="stylesheet">
 
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Template Stylesheet -->
+    <link href="/css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css">
 
 
-     <style>
+    <style>
         .vehicle-card {
             border: 2px solid #007bff;
             margin-bottom: 20px;
@@ -39,26 +42,31 @@
             padding: 10px;
             background: #f8f9fa;
         }
+
         .vehicle-card img {
             width: 100%;
             height: auto;
         }
+
         .sidebar {
             background: #007bff;
             color: white;
             padding: 15px;
             border-radius: 5px;
         }
+
         .sidebar a {
             color: white;
             text-decoration: none;
             display: block;
             padding: 8px;
-            border-bottom: 1px solid rgba(255,255,255,0.3);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.3);
         }
+
         .sidebar a:hover {
-            background: rgba(255,255,255,0.2);
+            background: rgba(255, 255, 255, 0.2);
         }
+
         .enquiry-form {
             background: #f8f9fa;
             padding: 15px;
@@ -66,178 +74,446 @@
         }
     </style>
 
+    <style>
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin-top: 20px;
+        }
+
+        @media screen and (max-width: 800px) {
+            .icon-container {
+                display: flex;
+                justify-content: center;
+                gap: 0px;
+                margin-top: 20px;
+                overflow-x: hidden;
+            }
+
+        }
+
+        .icon-box {
+            width: 30px;
+            height: 30px;
+            border: 2px solid #000;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 15px;
+            color: #000;
+            position: relative;
+            transition: transform 0.3s ease-in-out;
+            cursor: pointer;
+            background: white;
+        }
+
+        .icon-box:hover {
+            transform: scale(1.1);
+            background-color: #f8f9fa;
+        }
+
+        /* Tooltip Styling */
+        .tooltip-text {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 5px;
+            border-radius: 5px;
+            position: absolute;
+            bottom: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            transition: opacity 0.3s;
+            font-size: 12px;
+        }
+
+        .icon-box:hover .tooltip-text {
+            visibility: visible;
+            opacity: 1;
+        }
+
+        @media screen {}
+    </style>
+
 
 </head>
+
 <body>
-   <!-- Topbar Start -->
-   <div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
-    <div class="row">
-        <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
-            <div class="d-inline-flex align-items-center">
-                <a class="text-body pr-3" href="https://wa.me/9312288985" target="_blank"><i
-                        class="fa fa-phone-alt mr-2"></i>+91
-                    9312288985</a>
-                <span class="text-body">|</span>
-                <a class="text-body pr-3 mx-2" href="https://wa.me/9773764427" target="_blank"><i
-                        class="fa fa-phone-alt mr-2"></i>+91
-                    9773764427</a>
-                <span class="text-body">|</span>
-                <a class="text-body px-3" href="mailto:booking@carcoachrentalsindia.com"><i
-                        class="fa fa-envelope mr-2"></i>booking@carcoachrentalsindia.com</a>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-dark py-3 px-lg-5 d-none d-lg-block">
+        <div class="row">
+            <div class="col-md-6 text-center text-lg-left mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body pr-3" href="https://wa.me/9312288985" target="_blank"><i
+                            class="fa fa-phone-alt mr-2"></i>+91
+                        9312288985</a>
+                    <span class="text-body">|</span>
+                    <a class="text-body pr-3 mx-2" href="https://wa.me/9773764427" target="_blank"><i
+                            class="fa fa-phone-alt mr-2"></i>+91
+                        9773764427</a>
+                    <span class="text-body">|</span>
+                    <a class="text-body px-3" href="mailto:booking@carcoachrentalsindia.com"><i
+                            class="fa fa-envelope mr-2"></i>booking@carcoachrentalsindia.com</a>
+                </div>
             </div>
-        </div>
-        <div class="col-md-6 text-center text-lg-right">
-            <div class="d-inline-flex align-items-center">
-                <a class="text-body px-3" href="https://www.facebook.com/">
-                    <i class="fab fa-facebook-f"></i>
-                </a>
-                <a class="text-body px-3" href="https://twitter.com/">
-                    <i class="fab fa-twitter"></i>
-                </a>
-                <a class="text-body px-3" href="https://linkedin.com/">
-                    <i class="fab fa-linkedin-in"></i>
-                </a>
-                <a class="text-body px-3" href="https://instagram.com/">
-                    <i class="fab fa-instagram"></i>
-                </a>
-                <a class="text-body pl-3" href="https://youtube.com/">
-                    <i class="fab fa-youtube"></i>
-                </a>
+            <div class="col-md-6 text-center text-lg-right">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body px-3" href="https://www.facebook.com/">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a class="text-body px-3" href="https://twitter.com/">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a class="text-body px-3" href="https://linkedin.com/">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a class="text-body px-3" href="https://instagram.com/">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a class="text-body pl-3" href="https://youtube.com/">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </div>
-</div>
-<!-- Topbar End -->
+    <!-- Topbar End -->
 
 
-<!-- Navbar Start -->
-<div class="container-fluid position-relative nav-bar p-0 ">
-    <div class="position-relative px-lg-5" style="z-index: 9;">
-        <nav class="navbar navbar-expand-lg  navbar-dark py-3 py-lg-0 pl-3 pl-lg-5 navbar_inner">
-            <a href="/" class="navbar-brand">
-                <h1 class="text-uppercase  mb-1">CarCoachRentalsIndia</h1>
-            </a>
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
-                <div class="navbar-nav ml-auto py-0">
-                    <div class="nav-item dropdown">
-                        <a href="" class="nav-link active dropdown-toggle text-md-white text-sm-white  car-link" data-toggle="dropdown">Car</a>
-                        <div class="dropdown-menu rounded-0 m-0">
-                            <!-- <a href="#" class="dropdown-item">Luxury Cars Fleet</a> -->
-                            <a href="BudgetCarsFleet.html" class="dropdown-item">Budget Cars Fleet</a>
-                            <a href="SuvCarsFleet.html" class="dropdown-item">SUV Vehicle Fleet</a>
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0 ">
+        <div class="position-relative px-lg-5" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg  navbar-dark py-3 py-lg-0 pl-3 pl-lg-5 navbar_inner">
+                <a href="/" class="navbar-brand">
+                    <h1 class="text-uppercase  mb-1">CarCoachRentalsIndia</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <div class="nav-item dropdown">
+                            <a href="" class="nav-link active dropdown-toggle text-md-white text-sm-white  car-link"
+                                data-toggle="dropdown">Car</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <!-- <a href="#" class="dropdown-item">Luxury Cars Fleet</a> -->
+                                <a href="BudgetCarsFleet.html" class="dropdown-item">Budget Cars Fleet</a>
+                                <a href="SuvCarsFleet.html" class="dropdown-item">SUV Vehicle Fleet</a>
+                            </div>
+                        </div>
+                        <div class="nav-item dropdown">
+                            <a href="" class="nav-link active dropdown-toggle text-md-white text-sm-white  car-link"
+                                data-toggle="dropdown">Minivan</a>
+                            <div class="dropdown-menu rounded-0 m-0">
+                                <a href="" class="dropdown-item">Minivan</a>
+                            </div>
                         </div>
                     </div>
                     <div class="nav-item dropdown">
-                        <a href="" class="nav-link active dropdown-toggle text-md-white text-sm-white  car-link" data-toggle="dropdown">Minivan</a>
+                        <a href="" class="nav-link active dropdown-toggle" data-toggle="dropdown">Tour Packages</a>
                         <div class="dropdown-menu rounded-0 m-0">
-                            <a href="" class="dropdown-item">Minivan</a>
+                            <a href="Tour-Packages.html" class="dropdown-item">Packages</a>
+                            <!-- <a href="" class="dropdown-item">Weekend Tours</a> -->
                         </div>
                     </div>
+                    <a href="ContactUs.html" class="nav-item nav-link active">Contact Us</a>
                 </div>
-                <div class="nav-item dropdown">
-                    <a href="" class="nav-link active dropdown-toggle" data-toggle="dropdown">Tour Packages</a>
-                    <div class="dropdown-menu rounded-0 m-0">
-                        <a href="Tour-Packages.html" class="dropdown-item">Packages</a>
-                        <!-- <a href="" class="dropdown-item">Weekend Tours</a> -->
-                    </div>
-                </div>
-                <a href="ContactUs.html" class="nav-item nav-link active">Contact Us</a>
-            </div>
+        </div>
+        </nav>
     </div>
-    </nav>
-</div>
-</div>
+    </div>
 
-<div class="container " >
-    <nav aria-label="breadcrumb " >
-        <ol class="breadcrumb" style="background-color: white;">
-          <li class="breadcrumb-item"><a class=" " href="/" style="text-decoration: underline;">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Cars</li>
-        </ol>
-      </nav>
-</div>
+    <div class="container ">
+        <nav aria-label="breadcrumb ">
+            <ol class="breadcrumb" style="background-color: white;">
+                <li class="breadcrumb-item"><a class=" " href="/" style="text-decoration: underline;">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Cars</li>
+            </ol>
+        </nav>
+    </div>
 
 
-    
+
     <div class="container mt-4">
         <div class="row">
-            <!-- Left Sidebar (Hidden on Small and Medium Screens) -->
-            <div class="col-lg-3 d-none d-lg-block ">
-                <div class="sidebar">
-                    <h5 class="">Vehicle Categories</h5>
-                    <a href="Maruti-Swift-Dzire.html">Maruti-Swift-Dzire</a>
-                    <a href="Maruti-Eeco.html">Maruti Eeco</a>
-                    <a href="Toyota-Etios.html">Toyota Etios</a>
-                    <a href="Maruti-Ertiga.html">Maruti Ertiga</a>
-                    <a href="Toyota-innova-crysta.html">Toyota innova Crysta</a>
-                    <a href="#">Toyota Commuter</a>
-                    <a href="#">Toyota Alphard</a>
-                    <a href="#">Toyota Coaster</a>
-                    <a href="#">Tempo Traveller</a>
-                    <a href="#">Volkswagen Crafter</a>
-                    <a href="#">Force Urbania</a>
-                </div>
-            </div>
-    
-            <!-- Vehicle Grid (Takes Full Width on Small and Medium Screens) -->
-            <div class="col-md-9 col-lg-6">
+
+
+            <div class="col-md-9 col-lg-9">
                 <div class="row">
-                    <div class="col-md-12">
-                       <a class="text-decoration-none" href="BudgetCarsFleet.html"> <h1 class="text-center p-2 p-lg-4">Budget Cars Fleet</h1></a>
+                    <div class="col-12">
+                        <h1 class="text-center text-dark">Maruti Swift Dzire</h1>
+                        <p>
+                            We provides Kia Carnival limousine luxury car rental in Delhi, Agra, Jaipur, Bengaluru,
+                            Hyderabad and Mumabi on best price with your whole family, then our 6 & 7 seater Kia
+                            Carnival offers with a driver is waiting for you. With a modern yet affordable range, this
+                            Kia Carnival taxi offers the best in luxury vehicles. It is a great opportunity for you to
+                            experience the truly luxurious drive. Kia Carnival is the perfect partner for a tour that
+                            provides you the ultimate comfort and confidence to travel along long journeys.
+
+                            If you are looking for comfort, style, and premium details, then Kia Carnival is the best
+                            choice. With multiple design modes and thoughtful design, choose this classic model for your
+                            sophisticated journey. We assure to provide contactless delivery and pick-up of the car with
+                            100% sanitization, safety and hygiene practices. Moreover, you are free to take away the car
+                            with no limits and zero hidden charg
+
+                            Book to hire Kia Carnival Car for Local run Personal Uses, Business Trip for Corporate
+                            clients and Outstation Trip in India. Rent a 7 seater imported luxury Kia Carnival Car
+                            Rental is Comfortable For Kia Carnival Car Rental. Our Drivers is Experienced to Drive
+                            Vehicle on Hills and Plain Areas and Familiar With All Sightseeing Tourist Places in North
+                            India. We Have a Fleet of Kia Carnival Car Rental
+
+
+                        </p>
+
                     </div>
-                      
+
+
                     <div class="col-md-6">
-                        <a href="Maruti-Swift-Dzire.html">
-                        <div class="vehicle-card">
-                            <img src="IMG/Cards/5.png" alt="Toyota Vellfire">
-                            <h6>Maruti Swift Dzire</h6>
-                        </div>
-                    </a>
+                        <a href="Maruti-Swift-Dzire.html" style="text-decoration: none;">
+                            <div class="vehicle-card">
+                                <img src="IMG/Cards/5.png" alt="Toyota Vellfire">
+                                <h6>Maruti Swift Dzire</h6>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae similique corrupti
+                                    voluptatem doloremque temporibus quaerat at eaque maiores quibusdam atque fugiat
+                                    quod itaque, ad accusantium.</p>
+                           <div class="container text-center">
+                                    <div class="icon-container">
+                                        <div class="icon-box">
+                                            <i class="bi bi-people"></i>
+                                            <div class="tooltip-text">5+1 Passengres </div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-speedometer2"></i>
+                                            <div class="tooltip-text">120 kmph</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-fuel-pump"></i>
+                                            <div class="tooltip-text">Petrol </div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-suitcase"></i>
+                                            <div class="tooltip-text"> 5 Luggage Space</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-person"></i>
+                                            <div class="tooltip-text">Comfort/Seating Yes</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-tv"></i>
+                                            <div class="tooltip-text">(TV) Available</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-battery-full"></i>
+                                            <div class="tooltip-text">Charging/Battery Available</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-camera-video"></i>
+                                            <div class="tooltip-text">Security/Camera Available</div>
+                                        </div>
+                                    </div>
+                                </div> </div>
+                        </a>
                     </div>
                     <div class="col-md-6">
-                        <a href="Maruti-Eeco.html">
-                        <div class="vehicle-card">
-                            <img src="IMG/Cards/2.png" alt="Mercedes V Class">
-                            <h6>Maruti Eeco</h6>
-                        </div>
-                    </a>
+                        <a href="Maruti-Eeco.html" style="text-decoration: none;">
+                            <div class="vehicle-card">
+                                <img src="IMG/Cards/2.png" alt="Mercedes V Class">
+                                <h6>Maruti Eeco</h6>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae similique corrupti
+                                    voluptatem doloremque temporibus quaerat at eaque maiores quibusdam atque fugiat
+                                    quod itaque, ad accusantium.</p>
+
+                           <div class="container text-center">
+                                    <div class="icon-container">
+                                        <div class="icon-box">
+                                            <i class="bi bi-people"></i>
+                                            <div class="tooltip-text">5+1 Passengres </div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-speedometer2"></i>
+                                            <div class="tooltip-text">120 kmph</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-fuel-pump"></i>
+                                            <div class="tooltip-text">Petrol </div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-suitcase"></i>
+                                            <div class="tooltip-text"> 5 Luggage Space</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-person"></i>
+                                            <div class="tooltip-text">Comfort/Seating Yes</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-tv"></i>
+                                            <div class="tooltip-text">(TV) Available</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-battery-full"></i>
+                                            <div class="tooltip-text">Charging/Battery Available</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-camera-video"></i>
+                                            <div class="tooltip-text">Security/Camera Available</div>
+                                        </div>
+                                    </div>
+                                </div> </div>
+                        </a>
                     </div>
                     <div class="col-md-6">
-                        <a href="Toyota-Etios.html">
-                        <div class="vehicle-card">
-                            <img src="IMG/Cards/4.png" alt="Mercedes V Class">
-                            <h6>Toyota Etios</h6>
-                        </div>
-                    </a>
+                        <a href="Toyota-Etios.html" style="text-decoration: none;">
+                            <div class="vehicle-card">
+                                <img src="IMG/Cards/4.png" alt="Mercedes V Class">
+                                <h6>Toyota Etios</h6>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae similique corrupti
+                                    voluptatem doloremque temporibus quaerat at eaque maiores quibusdam atque fugiat
+                                    quod itaque, ad accusantium.</p>
+<div class="container text-center">
+                                    <div class="icon-container">
+                                        <div class="icon-box">
+                                            <i class="bi bi-people"></i>
+                                            <div class="tooltip-text">5+1 Passengres </div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-speedometer2"></i>
+                                            <div class="tooltip-text">120 kmph</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-fuel-pump"></i>
+                                            <div class="tooltip-text">Petrol </div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-suitcase"></i>
+                                            <div class="tooltip-text"> 5 Luggage Space</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-person"></i>
+                                            <div class="tooltip-text">Comfort/Seating Yes</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-tv"></i>
+                                            <div class="tooltip-text">(TV) Available</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-battery-full"></i>
+                                            <div class="tooltip-text">Charging/Battery Available</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-camera-video"></i>
+                                            <div class="tooltip-text">Security/Camera Available</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
-                    
-    
-                    <div class="col-md-12">
-                       <a class="text-decoration-none" href="SuvCarsFleet.html"> <h1 class="text-center p-2 p-lg-4">SUV Vehicle Fleet</h1></a>
-                    </div>
-    
+
+
+
+
                     <div class="col-md-6">
-                        <a href="Maruti-Ertiga.html">
-                        <div class="vehicle-card">
-                            <img src="IMG/Page-Caraousel/ERTIGA/1.jpg" alt="Toyota Hiace">
-                            <h6>Maruti Ertiga</h6>
-                        </div>
-                    </a>
+                        <a href="Maruti-Ertiga.html" style="text-decoration: none;">
+                            <div class="vehicle-card">
+                                <img src="IMG/Page-Caraousel/ERTIGA/1.jpg" alt="Toyota Hiace">
+                                <h6>Maruti Ertiga</h6>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae similique corrupti
+                                    voluptatem doloremque temporibus quaerat at eaque maiores quibusdam atque fugiat
+                                    quod itaque, ad accusantium.</p>
+                                    <div class="container text-center">
+                                    <div class="icon-container">
+                                        <div class="icon-box">
+                                            <i class="bi bi-people"></i>
+                                            <div class="tooltip-text">5+1 Passengres </div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-speedometer2"></i>
+                                            <div class="tooltip-text">120 kmph</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-fuel-pump"></i>
+                                            <div class="tooltip-text">Petrol </div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-suitcase"></i>
+                                            <div class="tooltip-text"> 5 Luggage Space</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-person"></i>
+                                            <div class="tooltip-text">Comfort/Seating Yes</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-tv"></i>
+                                            <div class="tooltip-text">(TV) Available</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-battery-full"></i>
+                                            <div class="tooltip-text">Charging/Battery Available</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-camera-video"></i>
+                                            <div class="tooltip-text">Security/Camera Available</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                     <div class="col-md-6">
-                        <a  href="Toyota-innova-crysta.html">
-                        <div class="vehicle-card">
-                            <img src="IMG/Page-Caraousel/INNOVA/1.png" alt="Mercedes Sprinter">
-                            <h6>Toyota innova Crysta</h6>
-                        </div>
-                    </a>
+                        <a href="Toyota-innova-crysta.html" style="text-decoration: none;">
+                            <div class="vehicle-card">
+                                <img src="IMG/Page-Caraousel/INNOVA/1.png" alt="Mercedes Sprinter">
+                                <h6>Toyota innova Crysta</h6>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae similique corrupti
+                                    voluptatem doloremque temporibus quaerat at eaque maiores quibusdam atque fugiat
+                                    quod itaque, ad accusantium.</p>
+                                <div class="container text-center">
+                                    <div class="icon-container">
+                                        <div class="icon-box">
+                                            <i class="bi bi-people"></i>
+                                            <div class="tooltip-text">5+1 Passengres </div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-speedometer2"></i>
+                                            <div class="tooltip-text">120 kmph</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-fuel-pump"></i>
+                                            <div class="tooltip-text">Petrol </div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-suitcase"></i>
+                                            <div class="tooltip-text"> 5 Luggage Space</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-person"></i>
+                                            <div class="tooltip-text">Comfort/Seating Yes</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-tv"></i>
+                                            <div class="tooltip-text">(TV) Available</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-battery-full"></i>
+                                            <div class="tooltip-text">Charging/Battery Available</div>
+                                        </div>
+                                        <div class="icon-box">
+                                            <i class="bi bi-camera-video"></i>
+                                            <div class="tooltip-text">Security/Camera Available</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
                     </div>
                 </div>
             </div>
-    
+
             <!-- Quick Inquiry Form -->
             <div class="col-md-3">
                 <div class="enquiry-form">
@@ -277,18 +553,34 @@
                         </div>
                         <button class="btn btn-primary btn-block">Submit Now</button>
                     </form>
+                    <div class=" mt-5 d-none d-lg-block ">
+                        <div class="sidebar">
+                            <h5 class="">Vehicle Categories</h5>
+                            <a href="Maruti-Swift-Dzire.html">Maruti-Swift-Dzire</a>
+                            <a href="Maruti-Eeco.html">Maruti Eeco</a>
+                            <a href="Toyota-Etios.html">Toyota Etios</a>
+                            <a href="Maruti-Ertiga.html">Maruti Ertiga</a>
+                            <a href="Toyota-innova-crysta.html">Toyota innova Crysta</a>
+                            <a href="#">Toyota Commuter</a>
+                            <a href="#">Toyota Alphard</a>
+                            <a href="#">Toyota Coaster</a>
+                            <a href="#">Tempo Traveller</a>
+                            <a href="#">Volkswagen Crafter</a>
+                            <a href="#">Force Urbania</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    
 
 
 
 
 
-     <!-- Footer Start -->
-     <div class="container-fluid bg-dark py-5 px-sm-3 px-md-5" style="margin-top: 90px;">
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark py-5 px-sm-3 px-md-5" style="margin-top: 90px;">
         <div class="row pt-5">
             <div class="col-lg-3 col-md-6 mb-5">
                 <h4 class="text-uppercase text-light mb-4">Get In Touch</h4>
@@ -307,7 +599,8 @@
             <div class="col-lg-2 col-md-6 mb-5">
                 <h4 class="text-uppercase text-light mb-4">Usefull Links</h4>
                 <div class="d-flex flex-column justify-content-start">
-                    <a class="text-body mb-2" href="About.html"><i class="fa fa-angle-right text-white mr-2"></i>About Us</a>
+                    <a class="text-body mb-2" href="About.html"><i class="fa fa-angle-right text-white mr-2"></i>About
+                        Us</a>
                     <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Privacy
                         Policy</a>
                     <a class="text-body mb-2" href="#"><i class="fa fa-angle-right text-white mr-2"></i>Term &
@@ -369,7 +662,7 @@
         </div>
     </div>
     <!-- Footer End -->
-    
+
     <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
 

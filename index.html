@@ -21,13 +21,17 @@
     <!-- Libraries Stylesheet -->
     <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
     <link href="lib/tempusdominus/css/tempusdominus-bootstrap-4.min.css" rel="stylesheet" />
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 
     <!-- Customized Bootstrap Stylesheet -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"> -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
 </head>
 
@@ -116,6 +120,39 @@
   
   
   
+  <style>
+    .car-card {
+        border: 1px solid #ddd;
+        /* border-radius: 8px; */
+        overflow: hidden;
+        text-align: center;
+        transition: transform 0.3s ease-in-out;
+        background: #fff;
+    }
+    .car-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+    .car-title {
+        background-color: #0d6efd;
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+    }
+    .owl-nav {
+        text-align: center;
+        margin-top: 10px;
+    }
+    /* .owl-prev, .owl-next {
+        background: #0d6efd !important;
+        color: white !important;
+        padding: 5px 15px !important;
+        border-radius: 5px !important;
+        margin: 5px !important;
+    } */
+</style>
+
   
 
 
@@ -206,7 +243,7 @@
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0" style="margin-bottom: 90px;">
+    <div class="container-fluid p-0 mb-sm-3" style="margin-bottom: 90px;">
         <div id="header-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -272,30 +309,28 @@
 
     <div class="container about-section">
         <div class="row align-items-center  flex-column-reverse flex-md-row">
-            <div class="col-md-7 about-text">
-                <h2 class="my-4 text-center text-lg-left text-decoration-underline" style="text-decoration: underline;">About Us</h2>
+            <div class="col-md-12  about-text">
+                <h2 class="my-4 text-center text-lg-left text-decoration-underline" style="text-decoration: underline;">Welcome to carcoachrentalindia</h2>
                 <p class="text-justify">
                     Car Coach Rental India offers reliable, comfortable, and affordable travel solutions across India.
                     With a diverse fleet of well-maintained vehicles, from sedans to buses, we ensure a seamless journey
                     for solo travelers and groups alike. Our personalized tour packages cover iconic destinations like
                     the Taj Mahal, Varanasi, and the Himalayas, creating unforgettable travel experiences.
-                </p>
-                <p class="text-justify">
                     Beyond rentals, we provide 24/7 customer support and experienced drivers who double as guides,
                     enhancing your journey with local insights. Committed to sustainability, we promote eco-friendly
                     practices while ensuring transparent pricing and hassle-free bookings. Choose us as your trusted
                     travel partner and embark on a journey filled with memories, adventure, and discovery.
                 </p>
-                <a href="About.html">Read more...</a>
+                <!-- <a href="About.html">Read more...</a> -->
             </div>
-            <div class="col-md-5 about-image">
+            <!-- <div class="col-md-5 about-image">
                 <img src="IMG/Cards/3.png"
                     alt="Car Image">
-            </div>
+            </div> -->
         </div>
     </div>
 
-    <section class="car-section ">
+     <!-- <section class="car-section ">
         <h2>Our Car Collection</h2>
         <div class="container">
         <div class="owl-carousel testimonial-carousel">
@@ -305,7 +340,6 @@
               <img src="IMG/Cards/5.png" alt="Red Car">
               <div class="car-info">
                 <h3>Maruti Swift Dzire</h3>
-                <!-- <p>This red car is built for speed and style.</p> -->
               </div>
             </div>
           </div>
@@ -316,7 +350,6 @@
               <img src="IMG/Cards/2.png"" alt="Blue Car">
               <div class="car-info">
                 <h3>Maruti Eeco</h3>
-                <!-- <p>Power and elegance wrapped in a blue exterior.</p> -->
               </div>
             </div>
           </div>
@@ -327,7 +360,6 @@
               <img src="IMG/Cards/4.png" alt="Black Car">
               <div class="car-info">
                 <h3>Toyota Etios</h3>
-                <!-- <p>Modern luxury combined with sleek black design.</p> -->
               </div>
             </div>
           </div>
@@ -338,7 +370,6 @@
               <img src="IMG/Page-Caraousel/INNOVA/1.png" alt="Sports Car">
               <div class="car-info">
                 <h3>Toyota innova crysta</h3>
-                <!-- <p>Experience high-performance driving with our sports car.</p> -->
               </div>
             </div>
           </div>
@@ -349,7 +380,6 @@
               <img src="IMG/Page-Caraousel/ERTIGA/1.jpg" alt="Sports Car">
               <div class="car-info">
                 <h3>Maruti Ertiga</h3>
-                <!-- <p>Experience high-performance driving with our sports car.</p> -->
               </div>
             </div>
           </div>
@@ -357,55 +387,135 @@
         </div>
     </div>
 
-   <a href="cars.html"><button class="text-center view_all_btn">View All...</button>
-   </a> 
-      </section>
 
 
 
+
+
+    
+
+
+   
+
+   
+      </section>  -->
+
+
+
+
+
+      <!-- <section class="car-section ">
+        <h2>Our Car Collection</h2>
+        <div class="container">
+        <div class="owl-carousel testimonial-carousel">
+        
+            <div class="container my-5">
+        <div class="row g-4">
+            <div class="col-md-3">
+                <div class="car-card">
+                    <img src="IMG/Page-Caraousel/ERTIGA/1.jpg" alt="Toyota Vellfire">
+                    <div class="car-title">Toyota Vellfire</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="car-card">
+                    <img src="IMG/Page-Caraousel/ERTIGA/1.jpg" alt="Mercedes V Class">
+                    <div class="car-title">Mercedes V Class</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="car-card">
+                    <img src="IMG/Page-Caraousel/ERTIGA/1.jpg" alt="Kia Carnival Limousine">
+                    <div class="car-title">Kia Carnival Limousine</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="car-card">
+                    <img src="IMG/Page-Caraousel/ERTIGA/1.jpg" alt="Toyota Hiace">
+                    <div class="car-title">Toyota Hiace</div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+      </section>  -->
+
+      <div class="container">
+        <div class="owl-carousel owl-theme">
+            <a href="cars.html " style="text-decoration: none;" >
+            <div class="car-card">
+                <img src="IMG/Cards/5.png" alt="Toyota Vellfire">
+                <div class="car-title">Maruti Swift Dzire</div>
+            </div>
+        </a>
+        <a href="cars.html " style="text-decoration: none;" >
+            <div class="car-card">
+                <img src="IMG/Cards/2.png" alt="Mercedes V Class">
+                <div class="car-title">Maruti Eeco</div>
+            </div>
+        </a>
+        <a href="cars.html" style="text-decoration: none;">
+            <div class="car-card">
+                <img src="IMG/Cards/4.png" alt="Kia Carnival Limousine">
+                <div class="car-title">Toyota Etios</div>
+            </div>
+        </a>
+        <a class="" href="cars.html" style="text-decoration: none;">
+            <div class="car-card">
+                <img src="IMG/Page-Caraousel/ERTIGA/1.jpg" alt="Toyota Hiace">
+                <div class="car-title">Maruti Ertiga</div>
+            </div>
+        </a>
+        <a href="cars.html" style="text-decoration: none;">
+            <div class="car-card">
+                <img src="IMG/Page-Caraousel/INNOVA/1.png" alt="Toyota Hiace">
+                <div class="car-title">Toyota innova crysta</div>
+            </div>
+        </a>
+        </div>
+    </div>
+      
+
+
+   
 
 
       <section class="car-section">
         <h2>Our vans Collection</h2>
         <div class="container">
-            <div class="owl-carousel testimonial-carousel">
-                <div class="item">
-                  <div class="car-card">
-                    <img src="https://www.minivanhiredelhi.com/uploads/93346_1Tempo%20Traveler%20Van.jpg" alt="Red Car">
-                    <div class="car-info">
-                      <h3>Red Car</h3>
-                      <p>This red car is built for speed and style.</p>
-                    </div>
-                  </div>
+            <div class="owl-carousel owl-theme">
+                <a href="cars.html " style="text-decoration: none;" >
+                <div class="car-card">
+                    <img src="IMG/Cards/5.png" alt="Toyota Vellfire">
+                    <div class="car-title">Maruti Swift Dzire</div>
                 </div>
-                <div class="item">
-                  <div class="car-card">
-                    <img src="https://www.minivanhiredelhi.com/uploads/93346_1Tempo%20Traveler%20Van.jpg" alt="Blue Car">
-                    <div class="car-info">
-                      <h3>Blue Car</h3>
-                      <p>Power and elegance wrapped in a blue exterior.</p>
-                    </div>
-                  </div>
+            </a>
+            <a href="cars.html " style="text-decoration: none;" >
+                <div class="car-card">
+                    <img src="IMG/Cards/2.png" alt="Mercedes V Class">
+                    <div class="car-title">Maruti Eeco</div>
                 </div>
-                <div class="item">
-                  <div class="car-card">
-                    <img src="https://www.minivanhiredelhi.com/uploads/93346_1Tempo%20Traveler%20Van.jpg" alt="Black Car">
-                    <div class="car-info">
-                      <h3>Black Car</h3>
-                      <p>Modern luxury combined with sleek black design.</p>
-                    </div>
-                  </div>
+            </a>
+            <a href="cars.html" style="text-decoration: none;">
+                <div class="car-card">
+                    <img src="IMG/Cards/4.png" alt="Kia Carnival Limousine">
+                    <div class="car-title">Toyota Etios</div>
                 </div>
-                <div class="item">
-                  <div class="car-card">
-                    <img src="https://www.minivanhiredelhi.com/uploads/93346_1Tempo%20Traveler%20Van.jpg" alt="Sports Car">
-                    <div class="car-info">
-                      <h3>Sports Car</h3>
-                      <p>Experience high-performance driving with our sports car.</p>
-                    </div>
-                  </div>
+            </a>
+            <a class="" href="cars.html" style="text-decoration: none;">
+                <div class="car-card">
+                    <img src="IMG/Page-Caraousel/ERTIGA/1.jpg" alt="Toyota Hiace">
+                    <div class="car-title">Maruti Ertiga</div>
                 </div>
-              </div>
+            </a>
+            <a href="cars.html" style="text-decoration: none;">
+                <div class="car-card">
+                    <img src="IMG/Page-Caraousel/INNOVA/1.png" alt="Toyota Hiace">
+                    <div class="car-title">Toyota innova crysta</div>
+                </div>
+            </a>
+            </div>
         </div>
         
        
@@ -1033,12 +1143,14 @@
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-    <script src="lib/tempusdominus/js/moment.min.js"></script>
-    <script src="lib/tempusdominus/js/moment-timezone.min.js"></script>
+    <!-- <script src="lib/easing/easing.min.js"></script> -->
+    <!-- <script src="lib/waypoints/waypoints.min.js"></script> -->
+    <!-- <script src="lib/owlcarousel/owl.carousel.min.js"></script> -->
+    <!-- <script src="lib/tempusdominus/js/moment.min.js"></script> -->
+    <!-- <script src="lib/tempusdominus/js/moment-timezone.min.js"></script> -->
     <script src="lib/tempusdominus/js/tempusdominus-bootstrap-4.min.js"></script>
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script> -->
+
 
     <!-- Template Javascript -->
     <script src="/js/main.js"></script>
@@ -1046,7 +1158,51 @@
     <script src="/js/Form.js"></script>
 
 
-    
+    <!-- jQuery & Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+
+<!-- Owl Carousel JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+<script>
+    $(document).ready(function(){
+        $(".owl-carousel").owlCarousel({
+            loop: true,
+            margin: 15,
+            // nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            responsive:{
+                0:{ items: 1 },
+                576:{ items: 2 },
+                768:{ items: 3 },
+                992:{ items: 4 }
+            }
+        });
+    });
+</script>
+<script>
+    $(document).ready(function(){
+        $(".testimonial-carousel").owlCarousel({
+            loop: true,
+            margin: 15,
+            // nav: true,
+            dots: false,
+            autoplay: true,
+            autoplayTimeout: 3000,
+            autoplayHoverPause: true,
+            responsive:{
+                0:{ items: 1 },
+                576:{ items: 2 },
+                768:{ items: 3 },
+                992:{ items: 4 }
+            }
+        });
+    });
+</script>
 
 
 
