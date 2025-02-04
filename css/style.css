@@ -469,3 +469,12 @@ body{
         color: white !important;
     }
 }
+
+
+ /* hide mobile on small screens */
+@media (max-width: 576px) {
+    iframe{
+     display: none;
+   }
+ }
+    
