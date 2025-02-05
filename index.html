@@ -39,9 +39,6 @@
 <!-- about section -->
 <style>
     @media screen and (max-width: 500px) {}
-
-
-
     .about-section {
         padding: 10px 14px;
     }
@@ -71,8 +68,8 @@
         border-radius: 10px;
     }
 </style>
-<!-- car collection and owl carousel styling -->
 
+<!-- car collection and owl carousel styling -->
 <style>
     .car-section {
         text-align: center;
@@ -87,7 +84,7 @@
 
     .owl-carousel .item {
         background: #fff;
-        padding: 15px;
+        padding: 2px;
         border-radius: 10px;
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
         text-align: center;
@@ -120,7 +117,7 @@
 <!-- this stylingfor cars -->
 <style>
     .car-card {
-        border: 1px solid #ddd;
+        /* border: 1px solid #ddd; */
         /* border-radius: 8px; */
         overflow: hidden;
         text-align: center;
@@ -145,14 +142,6 @@
         text-align: center;
         margin-top: 10px;
     }
-
-    /* .owl-prev, .owl-next {
-        background: #0d6efd !important;
-        color: white !important;
-        padding: 5px 15px !important;
-        border-radius: 5px !important;
-        margin: 5px !important;
-    } */
 </style>
 
 <!-- this styling for vans -->
@@ -243,15 +232,18 @@
         }
     }
 </style>
+<!-- this styling for bus sections -->
 
 <style>
     body {
         font-family: Arial, sans-serif;
         background-color: #f8f9fa;
     }
+
     .bus-container {
         margin-top: 30px;
     }
+
     .bus-card {
         position: relative;
         color: white;
@@ -261,14 +253,17 @@
         overflow: hidden;
         transition: transform 0.3s;
     }
+
     .bus-card:hover {
         transform: scale(1.05);
     }
+
     .bus-card img {
         width: 100%;
         height: 200px;
         object-fit: cover;
     }
+
     .hero_img img {
         width: 100%;
         height: 30rem;
@@ -279,13 +274,14 @@
 
     @media (max-width: 768px) {
         .hero_img img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        border-top-left-radius: 8px;
-        border-top-right-radius: 8px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
     }
-    }
+
     .bus-title {
         /* position: absolute; */
         bottom: 0;
@@ -295,6 +291,7 @@
         padding: 10px;
         font-size: 1rem;
     }
+
     .bus-title_main {
         /* position: absolute; */
         bottom: 3.8rem;
@@ -303,12 +300,71 @@
         background: rgba(0, 0, 0, 0.7);
         padding: 10px;
         font-size: 1rem;
-        text-align: center ;
+        text-align: center;
         font-weight: bolder;
         /* margin-left: 2.2%;
         margin-right: 2.2%; */
     }
 </style>
+
+
+
+
+<!-- this styling for airpoart section  -->
+
+<style>
+    .airport-section {
+        padding: 60px 0;
+        text-align: center;
+        background-color: #f9f9f9;
+    }
+
+    .airport-section h2 {
+        font-size: 32px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+    }
+
+    .airport-section p {
+        font-size: 16px;
+        color: #555;
+        margin-bottom: 40px;
+    }
+
+    .airport-card {
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+    }
+
+    .airport-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .airport-card .airport-title {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        background: rgba(0, 0, 0, 0.7);
+        color: white;
+        padding: 10px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .airport-card:hover {
+        transform: scale(1.05);
+    }
+</style>
+
+
+
 
 
 
@@ -401,7 +457,7 @@
 
 
     <!-- Carousel Start -->
-    <div class="container-fluid p-0 mb-sm-3" style="margin-bottom: 90px;">
+    <div class="container-fluid p-0 mb-sm-3 mb-sm-0" >
         <div id="header-carousel" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
@@ -715,7 +771,7 @@
                 <div class="van-card">
                     <img src="https://www.indiancarrental.com/uploads/carrent/1696587143.PNG" alt="Luxury Van">
                     <div class="van-card-content">
-                        <h5>IMPORTED VANS FOR VIP</h5>
+                        <h5 class=" text-dark">IMPORTED VANS FOR VIP</h5>
                         <ul>
                             <li>✔ Toyota Vellfire Executive </li>
                             <li>✔ Mercedes Benz V Class</li>
@@ -731,10 +787,10 @@
 
             <div class="col-md-6">
                 <div class="van-card">
-                    <img src="https://www.indiancarrental.com/uploads/carrent/1696587143.PNG"
+                    <img src="https://www.indiancarrental.com/uploads/carrent/1696851392.jpg"
                         alt="Super Luxury Minivans">
                     <div class="van-card-content">
-                        <h5>SUPER LUXURY MINIVANS</h5>
+                        <h5 class=" text-dark">SUPER LUXURY MINIVANS</h5>
                         <ul>
                             <li>✔ Toyota Hiace</li>
                             <li>✔ Toyota Commuter</li>
@@ -750,9 +806,9 @@
         <div class="row">
             <div class="col-md-6">
                 <div class="van-card">
-                    <img src="https://www.indiancarrental.com/uploads/carrent/1696587143.PNG" alt="Luxury Van">
+                    <img src="https://www.indiancarrental.com/uploads/carrent/1696857924.jpg" alt="Luxury Van">
                     <div class="van-card-content">
-                        <h5>IMPORTED VANS FOR VIP</h5>
+                        <h5 class=" text-dark">IMPORTED VANS FOR VIP</h5>
                         <ul>
                             <li>✔ Toyota Vellfire Executive </li>
                             <li>✔ Mercedes Benz V Class</li>
@@ -768,10 +824,10 @@
 
             <div class="col-md-6">
                 <div class="van-card">
-                    <img src="https://www.indiancarrental.com/uploads/carrent/1696587143.PNG"
+                    <img src="https://www.indiancarrental.com/uploads/carrent/1696838565.PNG"
                         alt="Super Luxury Minivans">
                     <div class="van-card-content">
-                        <h5>SUPER LUXURY MINIVANS</h5>
+                        <h5 class=" text-dark">SUPER LUXURY MINIVANS</h5>
                         <ul>
                             <li>✔ Toyota Hiace</li>
                             <li>✔ Toyota Commuter</li>
@@ -792,53 +848,58 @@
 
     <div class="container bus-container " style="margin-top: 10%;">
         <h2 class="fw-bold text-center">ONLINE BUS BOOKING</h2>
-        <p class="text-center">Book the Best Value luxury Bus & Coach rental service across India for tours, events, and more.</p>
-        
+        <p class="text-center">Book the Best Value luxury Bus & Coach rental service across India for tours, events, and
+            more.</p>
+
         <div class="row g-3">
-            <div class="col-lg-6" >
+            <div class="col-lg-6">
                 <a href="bus.html" style="text-decoration: none;">
-                <div class="hero_img" data-bs-toggle="tooltip" title="View Details">
-                    <img src="https://www.indiancarrental.com/uploads/carrent/32424_1696941040.jpg" alt="Volvo Bus">
-                    <div class="bus-title_main text-white">VOLVO BUSES</div>
-                </div>
-            </a>
+                    <div class="hero_img" data-bs-toggle="tooltip" title="View Details">
+                        <img src="https://www.indiancarrental.com/uploads/carrent/32424_1696941040.jpg" alt="Volvo Bus">
+                        <div class="bus-title_main text-white">VOLVO BUSES</div>
+                    </div>
+                </a>
             </div>
             <div class="col-lg-6 mt-4 mt-lg-1 mt-md-4">
                 <div class="row g-3 " style="margin-bottom: 5%;">
                     <div class="col-md-6 col-sm-6" style="margin-bottom: 5%;">
                         <a class="" href="bus.html" style="text-decoration: none;">
-                        <div class="bus-card" data-bs-toggle="tooltip" title="View Details">
-                            <img src="https://www.indiancarrental.com/uploads/carrent/1697033425.jpg" alt="Mercedes Benz">
-                            <div class="bus-title">MERCEDES BENZ BUSES</div>
-                        </div>
-                    </a>
+                            <div class="bus-card" data-bs-toggle="tooltip" title="View Details">
+                                <img src="https://www.indiancarrental.com/uploads/carrent/1697033425.jpg"
+                                    alt="Mercedes Benz">
+                                <div class="bus-title">MERCEDES BENZ BUSES</div>
+                            </div>
+                        </a>
                     </div>
-                    
+
                     <div class="col-md-6 col-sm-6 " style="margin-bottom: 5%;">
                         <a class="" href="bus.html" style="text-decoration: none;">
 
-                        <div class="bus-card" data-bs-toggle="tooltip" title="View Details">
-                            <img src="https://www.indiancarrental.com/uploads/carrent/1697033425.jpg" alt="Luxury Coaches">
-                            <div class="bus-title">LARGE SIZE LUXURY COACHES</div>
-                        </div>
+                            <div class="bus-card" data-bs-toggle="tooltip" title="View Details">
+                                <img src="https://www.indiancarrental.com/uploads/carrent/1697033425.jpg"
+                                    alt="Luxury Coaches">
+                                <div class="bus-title">LARGE SIZE LUXURY COACHES</div>
+                            </div>
                         </a>
                     </div>
                     <div class="col-md-6 col-sm-6" style="margin-bottom: 5%;">
                         <a class="" href="bus.html" style="text-decoration: none;">
 
-                        <div class="bus-card" data-bs-toggle="tooltip" title="View Details">
-                            <img src="https://www.indiancarrental.com/uploads/carrent/1697033425.jpg" alt="Mini Bus">
-                            <div class="bus-title">MINI BUSES</div>
-                        </div>
+                            <div class="bus-card" data-bs-toggle="tooltip" title="View Details">
+                                <img src="https://www.indiancarrental.com/uploads/carrent/1697033425.jpg"
+                                    alt="Mini Bus">
+                                <div class="bus-title">MINI BUSES</div>
+                            </div>
                         </a>
                     </div>
-                    <div class="col-md-6 col-sm-6"style="margin-bottom: 5%;">
+                    <div class="col-md-6 col-sm-6" style="margin-bottom: 5%;">
                         <a class="" href="bus.html" style="text-decoration: none;">
 
-                        <div class="bus-card" data-bs-toggle="tooltip" title="View Details">
-                            <img src="https://www.indiancarrental.com/uploads/carrent/1697033425.jpg" alt="Toyota Mini Bus">
-                            <div class="bus-title">TOYOTA MINI BUS</div>
-                        </div>
+                            <div class="bus-card" data-bs-toggle="tooltip" title="View Details">
+                                <img src="https://www.indiancarrental.com/uploads/carrent/1697033425.jpg"
+                                    alt="Toyota Mini Bus">
+                                <div class="bus-title">TOYOTA MINI BUS</div>
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -851,11 +912,57 @@
 
 
 
+    <div class="container airport-section">
+        <h2>AIRPORT TRANSFERS</h2>
+        <p>Reliable and comfortable airport transfer services across India. Choose from a variety of premium vehicles
+            for a seamless journey.</p>
+        <div class="container">
+            <div class="owl-carousel owl-theme">
+                <a href="aiporttransfers.html" style="text-decoration: none;">
+                    <div class="car-card">
+                        <img src="IMG/Cards/5.png" alt="Toyota Vellfire">
+                        <div class="car-title">Delhi Airport Transfer</div>
+                    </div>
+                </a>
+                <a href="aiporttransfers.html" style="text-decoration: none;">
+                    <div class="car-card">
+                        <img src="IMG/Cards/2.png" alt="Mercedes V Class">
+                        <div class="car-title">Mumbai Airport transfer</div>
+                    </div>
+                </a>
+                <a href="aiporttransfers.html" style="text-decoration: none;">
+                    <div class="car-card">
+                        <img src="IMG/Cards/4.png" alt="Kia Carnival Limousine">
+                        <div class="car-title">Goa Airprt Transfer</div>
+                    </div>
+                </a>
+                <a class="" href="aiporttransfers.html" style="text-decoration: none;">
+                    <div class="car-card">
+                        <img src="IMG/Page-Caraousel/ERTIGA/1.jpg" alt="Toyota Hiace">
+                        <div class="car-title">Banglore Airport Transfer</div>
+                    </div>
+                </a>
+                <a href="aiporttransfers.html" style="text-decoration: none;">
+                    <div class="car-card">
+                        <img src="IMG/Page-Caraousel/INNOVA/1.png" alt="Toyota Hiace">
+                        <div class="car-title">Rajshthan Mumbai Transfer</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+
+
+
+
+
     <section class="car-section">
         <h2>Our Tour Packages </h2>
         <div class="container">
             <div class="owl-carousel testimonial-carousel">
-                <a href="Packages/Golden-Triangle-Tour.html">
+                <a href="GoldenTraingle.html" style="text-decoration: none;">
                     <div class="item">
                         <div class="car-card">
                             <img src="/IMG/Cards/delhi jaipur agra.webp" style="height: 17rem;" alt="Red Car">
@@ -866,7 +973,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="Packages/Delhi-Agra-Delhi-Tour.html">
+                <a href="GoldenTraingle.html" style="text-decoration: none;">
                     <div class="item">
                         <div class="car-card">
                             <img src="/IMG/Cards/2-days-delhi-agra-tour-package.webp" style="height: 17rem;"
@@ -878,7 +985,7 @@
                         </div>
                     </div>
                 </a>
-                <a href="Packages/Rajasthan-Tour.html">
+                <a href="GoldenTraingle.html" style="text-decoration: none;">
                     <div class="item">
                         <div class="car-card">
                             <img src="/IMG/Cards/Rajasthan-11.webp" style="height: 17rem;" alt="Black Car">
@@ -1532,7 +1639,7 @@
             });
         });
     </script>
-    
+
 
 
 
