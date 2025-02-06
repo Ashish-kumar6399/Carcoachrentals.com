@@ -336,7 +336,13 @@ h1,
 @media (max-width: 1200px) {
   h1,
   .h1 {
-    font-size: calc(1.375rem + 1.5vw);
+    font-size: calc(1rem + 1.5vw);
+  }
+}
+@media (max-width: 1100px) {
+  h1,
+  .h1 {
+    font-size: calc(0.5rem + 1.5vw);
   }
 }
 h2,
